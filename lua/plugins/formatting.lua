@@ -1,12 +1,4 @@
 return {
-  -- Disable format on save globally
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      autoformat = false,
-    },
-  },
-
   -- Configure conform.nvim for formatting
   {
     "stevearc/conform.nvim",
