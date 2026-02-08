@@ -4,7 +4,8 @@ return {
   opts = {
     ---@type lspconfig.options
     servers = {
-      -- pyright will be automatically installed with mason and loaded with lspconfig
+      -- Disable ts_ls since we use vtsls
+      ts_ls = { enabled = false },
       vtsls = {},
       eslint = {
         settings = {
