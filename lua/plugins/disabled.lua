@@ -5,4 +5,5 @@ return {
     "akinsho/bufferline.nvim",
     enabled = false,
   },
+  { "snacks.indent", enabled = false },
 }
