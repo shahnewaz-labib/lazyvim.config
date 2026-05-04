@@ -1,9 +1,12 @@
 return {
   "neovim/nvim-lspconfig",
-  ---@class PluginLspOpts
   opts = {
-    ---@type lspconfig.options
     servers = {
+      ["*"] = {
+        keys = {
+          { "K", false },
+        },
+      },
       -- Disable ts_ls since we use vtsls
       ts_ls = { enabled = false },
       vtsls = {},
